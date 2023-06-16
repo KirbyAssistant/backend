@@ -1,0 +1,52 @@
+name = "kirby-assistant-backend"
+main = "src/worker.ts"
+compatibility_date = "2023-06-16"
+
+account_id = "58613d1b43c070454e8c53b6d557e3f6"
+workers_dev = true
+
+[[d1_databases]]
+binding = "KirbyDB"
+database_name = "kirby"
+database_id = "7d96fcb0-da44-4d95-ae22-8fd7101e7045"
+
+[[r2_buckets]]
+binding = "KirbyBucket"
+bucket_name = "kirby-assistant-data"
+preview_bucket_name = "kirby-assistant-data-dev"
+
+# # KV Namespace binding - For more information: https://developers.cloudflare.com/workers/runtime-apis/kv
+# [[kv_namespaces]]
+# binding = "MY_KV_NAMESPACE"
+# id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+
+# # Durable Object binding - For more information: https://developers.cloudflare.com/workers/runtime-apis/durable-objects
+# [[durable_objects]]
+# binding = "MY_DURABLE_OBJECT"
+# class_name = "MyDurableObject"
+
+# # R2 Bucket binding - For more information: https://developers.cloudflare.com/r2/api/workers/workers-api-reference/#create-a-binding
+# [[r2_buckets]]
+# binding = "MY_BUCKET"
+# bucket_name = "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
+
+# # Service binding - For more information: https://developers.cloudflare.com/workers/platform/services
+# [[routes]]
+# binding = "MY_SERVICE"
+# pattern = "/api/*"
+# script = "api.js"
+
+# # Queue binding - For more information: https://developers.cloudflare.com/workers/runtime-apis/queues
+# [[queues]]
+# binding = "MY_QUEUE"
+# name = "my-queue"
+# zone_id = "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+
+# [env.production]
+# MY_VARIABLE = "production_value"
+
+# [env.staging]
+# MY_VARIABLE = "staging_value"
+
+# [env.shared]
+# SHARED_VARIABLE = "shared_value"
